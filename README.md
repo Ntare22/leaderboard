@@ -18,8 +18,10 @@ Pending
 
 To get a local copy up and running follow these simple example steps.
 
-- Download the project
-- Run it in a live Server
+- clone this repo, by running `git clone https://github.com/Ntare22/leaderboard.git`
+- run `npm install` to install 
+- run `npm run build` to create the production
+- run `npm start` to start the application
 
 
 ## Authors

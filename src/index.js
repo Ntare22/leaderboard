@@ -1,17 +1,12 @@
-const scores = [
-  { name: 'Jim', score: '30' },
-  { name: 'Ntare', score: '40' },
-];
+import { displayScores } from './displayScores.js';
+import { postScore } from './postScore.js';
 
-const scoresContainer = document.getElementById('scores-list');
+const refreshBtn = document.getElementById('refresh-btn');
 
-const displayScores = (scoreObj) => {
-  scoreObj.forEach((score) => {
-    const indivScore = `${score.name}: ${score.score}`;
-    const scoreItem = document.createElement('li');
-    scoreItem.innerHTML = indivScore;
-    scoresContainer.append(scoreItem);
-  });
-};
+refreshBtn.addEventListener('click', () => {
+  document.getElementById('scores-list').innerHTML = '';
+  displayScores();
+});
 
-displayScores(scores);
+displayScores();
+postScore();
