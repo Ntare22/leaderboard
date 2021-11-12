@@ -20,6 +20,9 @@ const postScore = () => {
       headers: { 'Content-type': 'application/json; charset=UTF-8' },
     });
 
+    username.value = '';
+    score.value = '';
+
     const response = await postData.json();
     responseMessage.innerHTML = response.result;
     return response.result;
