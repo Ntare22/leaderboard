@@ -18,6 +18,13 @@ const displayScores = async () => {
       scoresContainer.append(scoreItem);
     }
   });
+  const items = document.querySelector('#scores-list').childNodes;
+  // eslint-disable-next-line no-restricted-syntax
+  for (const item in items) {
+    if (item % 2 === 0) {
+      items[item].classList = 'grey';
+    }
+  }
 };
 
 // eslint-disable-next-line import/prefer-default-export

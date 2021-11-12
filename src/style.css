@@ -20,6 +20,15 @@
   display: flex;
   padding: 10px 0;
   justify-content: space-between;
+  align-items: center;
+}
+
+#refresh-btn {
+  width: 70px;
+  padding: 5px;
+  background-color: #808080;
+  border: none;
+  color: #fff;
 }
 
 #scores-list {
@@ -27,17 +36,37 @@
   padding: 10px 5px;
   border: 2px solid #000;
   width: 170%;
+  max-height: 400px;
+  overflow: scroll;
+}
+
+#scores-list li {
+  padding: 8px 5px;
 }
 
 form {
-  padding: 80px 100px;
+  padding: 140px 100px;
   display: flex;
   flex-direction: column;
   margin: 5px 80px;
 }
 
+form h3 {
+  padding: 10px 0;
+}
+
 form input {
   padding: 10px 10px;
-  width: 150%;
+  min-width: 450px;
   margin: 5px 0;
+}
+
+#submit-btn {
+  min-width: 50px;
+  margin-left: 150px;
+}
+
+.grey {
+  background-color: #808080;
+  color: #fff;
 }
